@@ -19,6 +19,8 @@
         <meta name="author" content="{{ site.metadata.author }}">
     {% endif %}
 
+    <!-- RSS     -->
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
     <!-- Favicons -->
     {% assign favicon_path_or_url = page.metadata.favicon | default: page.metadata.favicon_auto | default: site.metadata.favicon | default: site.metadata.favicon_auto %}
     {% if favicon_path_or_url contains 'http://' or favicon_path_or_url contains 'https://' %}
